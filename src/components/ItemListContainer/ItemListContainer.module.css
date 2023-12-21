@@ -1,0 +1,8 @@
+.saludo {
+    background-color: brown;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 16px;
+}
