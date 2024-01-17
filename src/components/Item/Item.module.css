@@ -1,0 +1,46 @@
+.calidad1 {
+    color: slategray;
+    font-size: 30px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.calidad2 {
+    color: sandybrown;
+    font-size: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.calidad3 {
+    color: darkgreen;
+    font-size: 25px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.calidad4 {
+    color: slateblue;
+    text-transform: uppercase;
+    font-size: 40px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.calidad5 {
+    color: teal;
+    font-size: 50000px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+
+}
+
+.bloque2 {
+   border: 1px solid black;
+   display: inline-block;
+}

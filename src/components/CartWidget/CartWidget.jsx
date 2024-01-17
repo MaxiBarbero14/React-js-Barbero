@@ -4,8 +4,8 @@ import primero from './CartWidget.module.css'
 const CartWidget = () => {
     return (
         <div>
-            <img className={primero.box} src={cart} alt=""/>
-            0
+            <img className={primero.box} src={cart} alt="" />
+            <p>0</p>
         </div>
     )
 }

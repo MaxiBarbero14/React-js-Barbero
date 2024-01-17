@@ -1,14 +1,9 @@
-.saludo {
-    background-color: brown;
-    color: whitesmoke;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 16px;
-    font-size: 30px;
+.detalle {
+color: crimson;
+font-size: 30px;
 }
 
-.carga {
+.carga2 {
     background-color: cornsilk;
     color: red;
     text-align: center;

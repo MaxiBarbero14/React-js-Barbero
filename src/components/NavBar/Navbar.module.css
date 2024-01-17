@@ -6,3 +6,9 @@
     padding: 16px;
 }
 
+a:Link, a:visited, a:active {
+    text-decoration: none;
+    text-decoration-style: solid;
+    color: brown;
+    font-size: 20px;
+}
