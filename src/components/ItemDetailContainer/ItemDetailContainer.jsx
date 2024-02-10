@@ -1,8 +1,9 @@
 import detalle2 from './ItemDetailContainer.module.css'
 import { useState, useEffect } from 'react'
-import { getProductById } from '../../asyncMock'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
+import { db } from '../../services/firebase/firebaseConfig' 
+import { getDoc, doc, QueryDocumentSnapshot } from 'firebase/firestore' 
 
 const ItemDetailContainer = () => {
     const [loading, setLoading] = useState(true)
@@ -12,13 +13,21 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
         setLoading(true)
-        getProductById(productId)
-            .then(product => {
-                setProducts(product) 
-            }) 
+
+        const productDocument = doc(db, 'product', productId)
+        getDoc(productDocument)
+            .then(queryDocumentSnapshot => {
+                const fields = queryDocumentSnapshot.data()
+                const productAdapted = {id: queryDocumentSnapshot.id, ...fields}
+                setProducts(productAdapted)
+            })
+            .catch(error => {
+                console.log('error', 'Error inespedado')
+            })
             .finally(() => {
                 setLoading(false)
             })
+
     }, [productId])
 
     if(loading) {

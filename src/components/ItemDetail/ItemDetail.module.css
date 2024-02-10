@@ -30,9 +30,9 @@
     height: 280px;
     padding: 10px;
     width: 300px;
+    
 }
 
 .bloque {
     display: block;
-    border: 1px solid black;
 }

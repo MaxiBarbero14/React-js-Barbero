@@ -6,7 +6,7 @@ const NavBar = () => {
     console.log(classes)
     return (
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <h1 className={classes.logo}>Ropa Oscura</h1>
                     <section>
                     <Link to={'/category/remeras'}>Remeras </Link>

@@ -1,0 +1,25 @@
+.carrito1 {
+    display: "flex";
+    width: '100%';
+    justify-content: space-around;
+}
+
+.letra{
+    color: brown;
+    background-color: white;
+}
+
+.button {
+    color: white;
+    background-color: black;
+}
+
+.titulo {
+    color: brown;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.total {
+    color: darkred;
+}

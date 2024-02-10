@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin: 2rem 0;
+    padding: 0 3rem;
+    border-radius: 1rem;
+}
+.container .img {
+    width: 7rem;
+}
+.container h5 {
+    font-size: 1.7rem;
+    width: 25%;
+}
+.container h5, .container p {
+    margin: 0;
+}
+.container p strong {
+    font-size: 1.5rem;
+}
+.container button {
+    border: none;
+    background-color: transparent;
+}
+.container button .icon {
+    font-size: 3rem;
+    color: red;
+    transition: all 0.3s ease-in-out;
+}
+.container button .icon:hover {
+    color: blue;
+    scale: 1.1;
+}
