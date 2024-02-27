@@ -5,7 +5,7 @@ import carrito from './Cart.module.css'
 
 
 const Cart = () => {
-    const { cart, clearCart, total } = useCart()
+    const { cart, removeItem, total, clearCart } = useCart()
 
     return (
         <>
@@ -19,7 +19,10 @@ const Cart = () => {
                             <h4 className={carrito.letra}>Cantidad: {prod.quantity}</h4>
                             <h4 className={carrito.letra}>Precio c/u: ${prod.precio}</h4>
                             <h4 className={carrito.letra}>Subtotal: ${prod.quantity * prod.precio}</h4>
-                            <button onClick={() => clearCart(prod.id)} className={carrito.button}>Quitar</button>
+                            <button onClick={() => removeItem(prod.id)} className={carrito.button}>Quitar</button>
+                            <div>
+                            <button onClick={() => clearCart(prod.id)} className={carrito.button}>Vaciar carrito</button>
+                            </div>
                         </div>
                     )
                 })
